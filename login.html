@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Log in · FocusFlow</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>try{var t=localStorage.getItem('focusflow_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div id="auth"><div class="abox">
+ <div class="aside"><a class="logo" href="index.html"><i class="fa-solid fa-bullseye" style="background:rgba(255,255,255,.2)"></i>FocusFlow</a><h2>Welcome to your study command centre.</h2><p style="opacity:.85">Demo prototype: accounts are saved only in this browser. Register for a fresh, empty workspace, or log in as demo@focusflow.app (password demo123) to see sample data.</p></div>
+ <div class="aform">
+  <div class="tabs"><a href="login.html" class="on">Log in</a><a href="register.html" class="">Register</a></div>
+  <form id="fl" novalidate>
+   <label class="f"><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="you@school.edu"></label><div class="err hide"></div>
+   <label class="f pw"><span>Password</span><input name="password" type="password" autocomplete="current-password" placeholder="At least 6 characters"><button type="button" class="ib" data-act="eye" aria-label="Show password"><i class="fa-regular fa-eye"></i></button></label><div class="err hide"></div>
+   <button class="btn pri" style="width:100%">Log in</button>
+   <button type="button" class="btn gh" style="width:100%;margin-top:10px" data-act="demo">Use demo account</button>
+  </form>
+  <p class="muted" style="margin-top:16px;text-align:center"><a href="index.html" style="color:var(--p);font-weight:600">Back to home</a></p>
+ </div>
+</div></div>
+<div id="toast" role="status"></div>
+<div id="modal" class="hide"></div>
+<script src="js/core/utils.js"></script>
+<script src="js/core/data.js"></script>
+<script src="js/core/theme.js"></script>
+<script src="js/core/modal.js"></script>
+<script src="js/core/events.js"></script>
+<script src="js/pages/auth.js"></script>
+</body>
+</html>

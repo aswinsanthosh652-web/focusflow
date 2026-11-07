@@ -1,0 +1,20 @@
+/* FocusFlow – Sidebar, topbar and page layout */
+/* ===== APP SHELL ===== */
+#app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}
+aside#side{background:var(--card);border-right:1px solid var(--bd);padding:22px 16px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:6px;z-index:50;transition:transform .3s}
+aside .logo{padding:0 8px 18px}
+.ni{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;color:var(--mu);font-weight:600;font-size:.92rem;width:100%;text-align:left;min-height:44px;transition:.2s}
+.ni i{width:20px;text-align:center}
+.ni:hover{background:var(--soft);color:var(--p)}
+.ni.on{background:var(--g);color:#fff;box-shadow:0 8px 18px rgba(91,92,230,.3)}
+.uchip{margin-top:auto;display:flex;gap:10px;align-items:center;padding:12px;border-radius:14px;background:var(--bg)}
+.uchip b{display:block;font-size:.88rem;line-height:1.2}
+.topbar{display:flex;align-items:center;gap:12px;padding:16px 28px;border-bottom:1px solid var(--bd);background:var(--card);position:sticky;top:0;z-index:20}
+.topbar h1{font-size:1.25rem;flex:1}
+#menu{display:none}
+main{padding:28px;min-width:0}
+.page{display:none;animation:in .3s}.page.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+.ph{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.ph h2{font-size:1.5rem;letter-spacing:-.02em}
+.scrim{position:fixed;inset:0;background:rgba(10,10,30,.5);z-index:40}

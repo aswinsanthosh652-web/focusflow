@@ -1,0 +1,12 @@
+/* FocusFlow – planner page styles */
+.strip{display:flex;gap:8px;align-items:center;margin-bottom:18px;overflow-x:auto;padding-bottom:4px}
+.dayb{flex:1;min-width:58px;padding:10px 4px;border-radius:14px;background:var(--card);border:1px solid var(--bd);text-align:center;font-size:.78rem;color:var(--mu);transition:.2s}
+.dayb b{display:block;font-size:1.15rem;color:var(--tx)}
+.dayb.on{background:var(--g);color:#fff;border-color:transparent}.dayb.on b{color:#fff}
+.dayb.today b{color:var(--p)}.dayb.on.today b{color:#fff}
+.sess{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:14px;background:var(--soft);border-left:4px solid var(--c);margin-bottom:10px}
+.sess.done{opacity:.6}.sess.done b{text-decoration:line-through}
+.sess .t{flex:1;min-width:0}.sess small{color:var(--mu);display:block}
+.wk{display:grid;grid-template-columns:repeat(7,minmax(130px,1fr));gap:10px;overflow-x:auto}
+.wk .col{background:var(--bg);border-radius:14px;padding:10px;min-height:180px}.wk .col h5{font-size:.8rem;margin-bottom:8px;color:var(--mu)}
+.wk .sess{flex-direction:column;align-items:flex-start;gap:2px;padding:8px 10px;font-size:.8rem}

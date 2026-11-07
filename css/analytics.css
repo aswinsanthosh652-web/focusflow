@@ -1,0 +1,2 @@
+/* FocusFlow – analytics page styles */
+.heat{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.heat i{aspect-ratio:1;border-radius:7px;background:var(--p);}
