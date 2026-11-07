@@ -1,3 +1,0 @@
-/* FocusFlow – Landing page */
-$('#featGrid').innerHTML=[['fa-gauge-high','Smart dashboard','Hours, streaks and a daily productivity score in one view.'],['fa-book-open','Subject manager','Colour-coded subjects with progress and study hours.'],['fa-list-check','Task tracking','Priorities, deadlines, search and filters that keep you honest.'],['fa-calendar-days','Study planner','Daily and weekly schedules with session cards.'],['fa-stopwatch','Pomodoro timer','Focus, short break and long break cycles with history.'],['fa-chart-line','Deep analytics','See trends, consistency and how your subjects compare.']].map(f=>`<div class="card feat"><i class="ico fa-solid ${f[0]}"></i><h4>${f[1]}</h4><p class="muted">${f[2]}</p></div>`).join('');
-showFlash();

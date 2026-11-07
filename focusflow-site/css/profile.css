@@ -1,5 +1,0 @@
-/* FocusFlow – profile page styles */
-.tog{width:46px;height:26px;border-radius:99px;background:var(--bd);position:relative;transition:.2s;flex:none}
-.tog::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s}
-.tog.on{background:var(--p)}.tog.on::after{left:23px}
-.big{width:84px;height:84px;font-size:1.9rem}
