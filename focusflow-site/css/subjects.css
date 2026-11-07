@@ -1,0 +1,5 @@
+/* FocusFlow – subjects page styles */
+.sc{border-top:5px solid var(--c);transition:transform .2s}.sc:hover{transform:translateY(-3px)}
+.sc h4{font-size:1.08rem;display:flex;justify-content:space-between;align-items:center}
+.sc p{margin:6px 0 14px;min-height:42px}
+.sc .meta{display:flex;justify-content:space-between;margin:8px 0 14px;font-size:.85rem;color:var(--mu)}

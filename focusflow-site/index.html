@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FocusFlow – Smart Study Planner and Productivity Tracking Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>try{var t=localStorage.getItem('focusflow_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+ <header class="nav"><div class="wrap">
+  <a href="#top" class="logo"><i class="fa-solid fa-bullseye"></i>FocusFlow</a>
+  <nav class="links"><a href="#features">Features</a><a href="#how">How it works</a><a href="#stats">Results</a><a href="#reviews">Reviews</a></nav>
+  <div style="display:flex;gap:8px;align-items:center">
+   <button class="ib" data-act="theme" aria-label="Toggle theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+   <a class="btn gh sm" href="login.html">Log in</a>
+   <a class="btn pri sm" href="register.html">Sign up</a>
+  </div>
+ </div></header>
+ <section class="hero" id="top"><div class="wrap">
+  <div>
+   <h1>Plan your study. Protect your focus. See real progress.</h1>
+   <p>FocusFlow brings your subjects, tasks, study schedule and focus timer into one calm workspace, so every hour you study counts.</p>
+   <div class="cta"><a class="btn pri" href="register.html">Get started free</a><button class="btn gh" data-act="demo">Explore dashboard</button></div>
+  </div>
+  <div class="mock" aria-hidden="true">
+   <div class="row"><div class="av"><i class="fa-solid fa-fire"></i></div><div><b>12-day streak</b><div class="muted">Today: 3h 20m focused</div></div></div>
+   <div class="mbars"><i style="height:40%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:80%"></i><i style="height:70%"></i><i style="height:100%"></i><i style="height:55%"></i></div>
+   <div style="margin-top:18px"><div class="meta" style="justify-content:space-between;margin-bottom:6px"><span>Weekly goal</span><b>78%</b></div><div class="bar"><i style="width:78%"></i></div></div>
+  </div>
+ </div></section>
+ <section class="sec" id="features"><div class="wrap">
+  <h2>Everything a student needs to stay on track</h2><p class="muted">Six tools that work together, from your first plan to your last exam.</p>
+  <div class="grid g3" id="featGrid"></div>
+ </div></section>
+ <section class="sec" id="how"><div class="wrap">
+  <h2>Up and running in three steps</h2><p class="muted">No setup headaches. Start studying in under two minutes.</p>
+  <div class="grid g3">
+   <div class="card step"><b>1</b><h4>Add your subjects</h4><p class="muted">Create a colour-coded subject for every course you take.</p></div>
+   <div class="card step"><b>2</b><h4>Plan tasks and sessions</h4><p class="muted">Set deadlines, priorities and study blocks on your calendar.</p></div>
+   <div class="card step"><b>3</b><h4>Focus and review</h4><p class="muted">Run Pomodoro sessions, then check your analytics to improve.</p></div>
+  </div>
+ </div></section>
+ <section class="sec" id="stats"><div class="wrap"><div class="stats grid g4 s2">
+  <div><b>48k+</b>Active students</div><div><b>1.2M</b>Focus sessions</div><div><b>92%</b>Hit weekly goals</div><div><b>4.9/5</b>Average rating</div>
+ </div></div></section>
+ <section class="sec" id="reviews"><div class="wrap">
+  <h2>Loved by students</h2><p class="muted">Sample feedback from the FocusFlow community.</p>
+  <div class="grid g3">
+   <div class="card quote"><p>“I finally see where my study time goes. My exam prep feels organised instead of stressful.”</p><div class="who"><span class="av">AM</span>Aisha M., Medical student</div></div>
+   <div class="card quote"><p>“The Pomodoro timer and streaks got me studying every day. My grades went up in one semester.”</p><div class="who"><span class="av">RK</span>Rahul K., Engineering</div></div>
+   <div class="card quote"><p>“Clean, fast and motivating. The weekly planner replaced three apps for me.”</p><div class="who"><span class="av">SL</span>Sara L., Law student</div></div>
+  </div>
+ </div></section>
+ <footer><div class="wrap">
+  <div><a class="logo" href="#top"><i class="fa-solid fa-bullseye"></i>FocusFlow</a><p class="muted" style="margin-top:10px;max-width:280px">Smart study planning and productivity tracking for students.</p></div>
+  <div class="fl"><a href="#features">Features</a><a href="#how">How it works</a><a href="#reviews">Reviews</a><a href="login.html">Log in</a></div>
+  <div class="soc"><a href="#" data-act="soc" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a><a href="#" data-act="soc" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" data-act="soc" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" data-act="soc" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+ </div><p class="muted wrap" style="margin-top:26px">© 2026 FocusFlow. Demo prototype, no data leaves your browser.</p></footer>
+<div id="toast" role="status"></div>
+<div id="modal" class="hide"></div>
+<script src="js/core/utils.js"></script>
+<script src="js/core/data.js"></script>
+<script src="js/core/theme.js"></script>
+<script src="js/core/modal.js"></script>
+<script src="js/core/events.js"></script>
+<script src="js/pages/landing.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* FocusFlow – Breakpoints (keep this file last) */
+/* ===== RESPONSIVE ===== */
+@media(max-width:1020px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){
+ #app{grid-template-columns:1fr}
+ aside#side{position:fixed;left:0;top:0;width:260px;transform:translateX(-100%)}aside#side.open{transform:none}
+ #menu{display:inline-grid}.topbar{padding:12px 16px}main{padding:16px}
+ .hero .wrap,.abox{grid-template-columns:1fr}.aside{display:none}.aform{padding:28px 22px}.links{display:none}.hero{padding:44px 0}
+ .g2{grid-template-columns:1fr}
+}
+@media(max-width:560px){.g4,.g3{grid-template-columns:1fr}.grid.g4.s2{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
